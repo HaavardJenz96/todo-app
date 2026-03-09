@@ -1,6 +1,7 @@
 <template>
   <div class="ag-theme-alpine" style="height: 500px; width: 100%">
     <AgGridVue
+      :suppressDragLeaveHidesColumns="true"
       :columnDefs="columnDefs"
       :rowData="todos"
       :defaultColDef="defaultColDef"
@@ -26,6 +27,7 @@ const columnDefs = ref([
     sortable: true,
     filter: true,
     editable: true,
+
     cellEditor: 'agSelectCellEditor',
     cellEditorParams: {
       values: [true, false],
