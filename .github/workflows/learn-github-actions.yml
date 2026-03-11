@@ -15,5 +15,5 @@ jobs:
       - run: bats -v
       - name: Super-Linter
         uses: super-linter/super-linter@v8.5.0
-        with:
-         github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
