@@ -3,7 +3,7 @@ import Header from './components/Header.vue'
 import TodoList from './components/TodoList.vue'
 import Grid from './components/TodoList.vue'
 
-import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community'
+                                              import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community'
 
 // Register all Community features
 ModuleRegistry.registerModules([AllCommunityModule])
